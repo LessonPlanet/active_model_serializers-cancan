@@ -50,7 +50,7 @@ end
 
 #### CRUD Alias
 
-If `:crud` is passed as an ability it will expand to the 7 default RESTful actions: `[:index, :show, :new, :create, :edit, :update, :delete]`
+If `:crud` is passed as an ability it will expand to the 7 default RESTful actions: `:index, :show, :new, :create, :edit, :update, :delete`
 
 #### Overriding an Ability
 

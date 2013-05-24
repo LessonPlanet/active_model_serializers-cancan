@@ -48,9 +48,9 @@ end
 @post.as_json # { id: 1, abilities: { show: true, update: false } }
 ```
 
-#### CRUD Alias
+#### RESTful Alias
 
-If `:crud` is passed as an ability it will expand to the 7 default RESTful actions: `:index, :show, :new, :create, :edit, :update, :delete`
+If `:restful` is passed as an ability it will expand to the 7 default RESTful actions: `:index, :show, :new, :create, :edit, :update, :delete`
 
 #### Overriding an Ability
 

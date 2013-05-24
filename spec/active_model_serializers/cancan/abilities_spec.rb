@@ -16,7 +16,7 @@ describe ActiveModel::Serializer::CanCan::Abilities do
     let(:serializer) do
       Class.new(ActiveModel::Serializer) do
         attributes :id
-        abilities :crud, :foo
+        abilities :restful, :foo
         def current_ability
           MockAbility.new(nil)
         end
@@ -36,7 +36,7 @@ describe ActiveModel::Serializer::CanCan::Abilities do
 
     context 'abilities key' do
       subject { category_serializer.serializable_hash[:abilities] }
-      its([:crud]) { should be_nil }
+      its([:restful]) { should be_nil }
       its([:update]) { should be_true }
       its([:show]) { should be_false }
       its([:foo]) { should be_true }

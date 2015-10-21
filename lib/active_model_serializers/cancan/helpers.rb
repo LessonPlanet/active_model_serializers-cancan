@@ -3,14 +3,14 @@ module ActiveModel
     module CanCan
       module Helpers
         def current_ability
-          Ability.new(options[:scope])
+          Ability.new(scope)
         end
 
         def can?(*args)
           current_ability.can? *args
         end
 
-        def cannot?
+        def cannot?(*args)
           current_ability.cannot? *args
         end
       end
